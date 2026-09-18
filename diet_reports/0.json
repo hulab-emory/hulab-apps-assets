@@ -1,0 +1,54 @@
+{
+ "filePath": "demo/diet_reports/NHANES_20092010/54273_report.pdf",
+ "info": [
+  {
+   "metadata": {
+    "Patient ID": "54273",
+    "Dataset Year": "NHANES 2009-2010",
+    "processing_time": "12.2 minutes",
+    "timestamp": "2025-11-09 18:06:05.916895",
+    "priorities": [
+     "Obesity",
+     "Borderline High Cholesterol",
+     "Low HDL Cholesterol"
+    ],
+    "continue": [
+     {
+      "food": "banana",
+      "priority": "Low HDL Cholesterol",
+      "why": "Bananas are a good source of potassium and fiber, which can help improve heart health and support weight loss."
+     }
+    ],
+    "replace": [
+     {
+      "current_food": "cereal bars",
+      "swap_with": "whole fruits or nuts",
+      "priority": "Obesity",
+      "why": "Cereal bars are often high in added sugars; replacing them with whole fruits or nuts can reduce sugar intake and increase fiber."
+     },
+     {
+      "current_food": "soft drinks",
+      "swap_with": "water or unsweetened beverages",
+      "priority": "Obesity",
+      "why": "Soft drinks are high in added sugars and contribute to weight gain; healthier alternatives can help reduce calorie intake."
+     },
+     {
+      "current_food": "chips",
+      "swap_with": "whole grain crackers or air-popped popcorn",
+      "priority": "Borderline High Cholesterol",
+      "why": "Chips are high in sodium and unhealthy fats; healthier snacks can support better cholesterol levels."
+     }
+    ],
+    "add": [
+     {
+      "food": "more fruits and vegetables",
+      "priority": "Obesity",
+      "why": "Increasing fruits and vegetables can enhance fiber intake, support weight loss, and improve overall nutrient density."
+     }
+    ],
+    "user_friendly_summary": "This report recommends focusing on weight loss and improving cholesterol levels through dietary changes. Key actions include replacing high-sugar snacks with healthier options, adding more fruits and vegetables, and maintaining hydration with water instead of sugary drinks.",
+    "tables_markdown": "| Food Item          | Action         | Reason for Change                                      |\n|--------------------|----------------|-------------------------------------------------------|\n| Cereal Bars        | Replace        | High in added sugars; swap for whole fruits or nuts. |\n| Soft Drinks        | Replace        | High in sugars; opt for water or unsweetened drinks. |\n| Chips              | Replace        | High in sodium; choose whole grain crackers instead.  |\n| Banana             | Continue       | Good source of potassium and fiber.                   |\n| More Fruits/Vegetables | Add        | Increases fiber and nutrient density.                 |"
+   }
+  }
+ ]
+}

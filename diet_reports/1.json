@@ -1,0 +1,81 @@
+{
+ "filePath": "demo/diet_reports/NHANES_20092010/59393_report.pdf",
+ "info": [
+  {
+   "metadata": {
+    "Patient ID": "59393",
+    "Dataset Year": "NHANES 2009-2010",
+    "processing_time": "4.9 minutes",
+    "timestamp": "2025-11-09 18:18:18.573655",
+    "priorities": [
+     "Medication Interactions",
+     "Stage 1 Hypertension",
+     "Overweight Status",
+     "Low HDL Cholesterol",
+     "Hydration Needs"
+    ],
+    "continue": [
+     {
+      "food": "Chicken Breast",
+      "priority": "Overweight Status",
+      "why": "High in protein, supports muscle growth and repair."
+     },
+     {
+      "food": "Broccoli",
+      "priority": "Overweight Status",
+      "why": "Rich in vitamins and minerals, high in fiber."
+     },
+     {
+      "food": "Brown Rice",
+      "priority": "Overweight Status",
+      "why": "Whole grain, provides complex carbohydrates and fiber."
+     },
+     {
+      "food": "Almonds",
+      "priority": "Overweight Status",
+      "why": "Healthy fats, good source of vitamin E and magnesium."
+     }
+    ],
+    "replace": [
+     {
+      "current_food": "Soda",
+      "swap_with": "Water",
+      "priority": "Overweight Status",
+      "why": "High in added sugars, contributes to weight gain and dental issues."
+     },
+     {
+      "current_food": "High sodium foods",
+      "swap_with": "Low sodium alternatives",
+      "priority": "Stage 1 Hypertension",
+      "why": "Contributes to elevated blood pressure."
+     },
+     {
+      "current_food": "Sugary snacks",
+      "swap_with": "Fruits",
+      "priority": "Overweight Status",
+      "why": "Can lead to weight gain and poor heart health."
+     }
+    ],
+    "add": [
+     {
+      "food": "More fruits",
+      "priority": "Overweight Status",
+      "why": "For additional vitamins and fiber."
+     },
+     {
+      "food": "Variety of vegetables",
+      "priority": "Overweight Status",
+      "why": "To enhance nutrient diversity."
+     },
+     {
+      "food": "Whole grains",
+      "priority": "Stage 1 Hypertension",
+      "why": "To provide fiber and support heart health."
+     }
+    ],
+    "user_friendly_summary": "This report provides dietary recommendations for an 80-year-old female with concerns about medication interactions, stage 1 hypertension, and overweight status. The focus is on continuing beneficial foods, replacing harmful options, and adding nutrient-rich foods to improve overall health.",
+    "tables_markdown": "| Action   | Food/Swap          | Priority               | Why                                                        |\n|----------|--------------------|------------------------|------------------------------------------------------------|\n| Continue | Chicken Breast     | Overweight Status      | High in protein, supports muscle growth and repair.        |\n| Continue | Broccoli           | Overweight Status      | Rich in vitamins and minerals, high in fiber.             |\n| Continue | Brown Rice         | Overweight Status      | Whole grain, provides complex carbohydrates and fiber.     |\n| Continue | Almonds            | Overweight Status      | Healthy fats, good source of vitamin E and magnesium.     |\n| Replace  | Soda               | Overweight Status      | High in added sugars, contributes to weight gain.         |\n| Replace  | High sodium foods   | Stage 1 Hypertension   | Contributes to elevated blood pressure.                    |\n| Replace  | Sugary snacks      | Overweight Status      | Can lead to weight gain and poor heart health.            |\n| Add      | More fruits        | Overweight Status      | For additional vitamins and fiber.                         |\n| Add      | Variety of vegetables| Overweight Status     | To enhance nutrient diversity.                             |\n| Add      | Whole grains       | Stage 1 Hypertension   | To provide fiber and support heart health.                 |"
+   }
+  }
+ ]
+}
