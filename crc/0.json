@@ -1,0 +1,71 @@
+{
+ "file_name": "module-03-informed-consent.pdf",
+ "_note": "Synthetic demo fixture. The questions, model names and responses are invented for the CADA demo and are not real model output.",
+ "info": [
+  {
+   "prompt": "A participant asks what 'randomized' means. Explain it to them. {}",
+   "LLMs": {
+    "gpt-4o": {
+     "response": "**Randomized** means a computer puts you into one of the study groups by chance, a bit like flipping a coin. Nobody — not you, not your study doctor — chooses which group you land in. This is done so the groups are alike at the start, which is what lets us tell whether any difference at the end came from the treatment rather than from who was in which group.",
+     "FKG": 7.8
+    },
+    "claude-3-opus": {
+     "response": "Randomization is the process of allocating participants to study arms via a stochastic assignment procedure, thereby minimizing selection bias and facilitating comparability of baseline covariates across treatment groups.",
+     "FKG": 16.4
+    }
+   }
+  },
+  {
+   "prompt": "Write the plain-language summary of study participation. {}",
+   "LLMs": {
+    "gpt-4o": {
+     "response": "If you join this study, you will come to the clinic five times over about six months. Each visit takes around an hour. We will ask about your health, check your blood pressure, and draw a small tube of blood. You can stop at any time, and your regular care will not change if you do.",
+     "FKG": 6.9
+    },
+    "claude-3-opus": {
+     "response": "Participation entails five scheduled clinic encounters across a six-month interval, each of approximately sixty minutes' duration, comprising history review, blood pressure measurement, and phlebotomy. Withdrawal is permitted at the participant's discretion without prejudice to standard care.",
+     "FKG": 17.2
+    }
+   }
+  },
+  {
+   "prompt": "The participant asks whether they will be told their test results. {}",
+   "LLMs": {
+    "gpt-4o": {
+     "response": "Yes, for the tests that are part of your regular care — your study doctor will go over those with you. Some study tests are done in batches after the study ends, so those results will not come back in time to be useful to you, and we will not be able to share them individually.",
+     "FKG": 8.1
+    },
+    "claude-3-opus": {
+     "response": "Clinically actionable assay results will be disclosed per standard of care. Research-only specimens undergo batch analysis post-study-completion and individual-level results will not be returned to participants.",
+     "FKG": 18.0
+    }
+   }
+  },
+  {
+   "prompt": "Translate the plain-language summary into Spanish. {}",
+   "LLMs": {
+    "gpt-4o": {
+     "response": "Si participa en este estudio, vendra a la clinica cinco veces durante unos seis meses. Cada visita dura alrededor de una hora. Le preguntaremos sobre su salud, le tomaremos la presion arterial y le sacaremos un tubo pequeno de sangre. Puede dejar el estudio cuando quiera, y su atencion medica habitual no cambiara.",
+     "FKG": 6.7
+    },
+    "claude-3-opus": {
+     "response": "La participacion implica cinco encuentros clinicos programados durante un intervalo de seis meses, cada uno de aproximadamente sesenta minutos, que comprenden revision de antecedentes, medicion de presion arterial y flebotomia. El retiro se permite a discrecion del participante.",
+     "FKG": 15.9
+    }
+   }
+  },
+  {
+   "prompt": "Rewrite the plain-language summary at a 5th-grade reading level. {}",
+   "LLMs": {
+    "gpt-4o": {
+     "response": "You will come to the clinic 5 times in about 6 months. Each visit is about 1 hour. We will ask how you feel, check your blood pressure, and take a little blood. You can stop any time. Your normal care stays the same.",
+     "FKG": 4.8
+    },
+    "claude-3-opus": {
+     "response": "The study requires five clinic visits over six months. Each visit lasts one hour and includes a health history review, blood pressure measurement, and a blood draw. Participants may withdraw at their discretion.",
+     "FKG": 12.1
+    }
+   }
+  }
+ ]
+}
