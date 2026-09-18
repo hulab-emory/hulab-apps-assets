@@ -1,0 +1,145 @@
+{
+ "filename": "0.json",
+ "text": "<AGE> yo F with a history of CAD, s/p remote CABG, 2 DES in place, AAA,\n   severe PVD, known systolic CHF who presents with chest pain, shortness\n   of breath, transferred from OSH with acute respiratory failure,\n   concerning for ischemic etiology.\n   Pt was admitted to OSH ICU on <DATE_TIME> from rehab complaining of shortness\n   of breath with substernal chest pain radiating to her back for 1 hour.\n   CP was <DATE_TIME>, and resolved with SL nitro x3.  Her EKG at that time was\n   NSR and unchanged from her baseline.\n   Of note, patient has a history of MVA trauma in <DATE_TIME>, as a\n   result has multiple fractures and is trach-vent dependent.\n   Patient was admitted to OSH ICU. She was ruled out for MI with 3\n   negative cardiac enzymes. CXR showed bilateral pulmonary infilatrates.\n   They were concerned for recurrent aspiration vs. hospital acquired\n   pneumonia vs. pulm edema.\n   During hospitalization, the patient was briefly extubated, but\n   developed recurrent respiratory distress on <DATE_TIME>, and the ventilator\n   was resumed.  BNP 1800.  She was diuresed with good effect.  Echo\n   showed EF 35%, 2+ MR, 1+ TR.  Her plavix for some reason was stopped at\n   rehab. It was resumed at OSH on <DATE_TIME>.\n   She was transfused 1u PRBCs on <DATE_TIME> for HCT of 26.\n   The patient was transferred to <HOSPITAL> for cardiac catheterization.  On\n   transfer vitals Tm 98, BPs 130-180/50-70, HR 70-80, 94% on 65% FiO2.\n   .\n   On arrival to the CCU, patient has some epigastric pain. She denies\n   chest pain or difficulty breathing. She nods her head yes to\n   having a headache. She is non verbal and nods/shakes her head yes/no.\n   Respiratory failure, acute (not ARDS/<NAME>)\n   Assessment:\n   Unable to wean patient off vent, bilat infiltrates, sputum cultures +\n   for MRSA @ OSH, low ef 20% with latest 35%\n   Action:\n   Vanco 1000mg IV and lasix 40mg IV  given @ 0800- Chest CT ordered-\n   pulmonary consulted- FIO2 decreased to 50%- echo done.\n   Response:\n   ABG on CPAP <DATE_TIME> 50% 7.47-48-78-36- O2 sats decreased to 94% from 97%,\n   diuresing well from lasix- (-) 1400cc since 12am- Chest CT ? infectious\n   process vs fluid overload-  additional dose of lasix 20mg IV given @\n   1700.\n   Plan:\n   Aggressive diuresis tonight- con\nt to monitor hemodynamics.\n",
+ "info": [
+  {
+   "start": 102,
+   "end": 105,
+   "concept": "Congestive heart failure",
+   "concept_id": 0,
+   "trigger_word": "CHF",
+   "offset": 102,
+   "cui": "C0018802",
+   "semtypes": [
+    "dsyn"
+   ]
+  },
+  {
+   "start": 124,
+   "end": 134,
+   "concept": "Chest Pain",
+   "concept_id": 1,
+   "trigger_word": "chest pain",
+   "offset": 124,
+   "cui": "C0008031",
+   "semtypes": [
+    "sosy"
+   ]
+  },
+  {
+   "start": 192,
+   "end": 211,
+   "concept": "Respiratory Failure",
+   "concept_id": 2,
+   "trigger_word": "Respiratory failure",
+   "offset": 192,
+   "cui": "C1145670",
+   "semtypes": [
+    "dsyn"
+   ]
+  },
+  {
+   "start": 360,
+   "end": 370,
+   "concept": "Chest Pain",
+   "concept_id": 3,
+   "trigger_word": "chest pain",
+   "offset": 360,
+   "cui": "C0008031",
+   "semtypes": [
+    "sosy"
+   ]
+  },
+  {
+   "start": 871,
+   "end": 880,
+   "concept": "Pneumonia",
+   "concept_id": 4,
+   "trigger_word": "pneumonia",
+   "offset": 871,
+   "cui": null,
+   "semtypes": null
+  },
+  {
+   "start": 986,
+   "end": 1006,
+   "concept": "Respiratory distress",
+   "concept_id": 5,
+   "trigger_word": "respiratory distress",
+   "offset": 986,
+   "cui": "C0476273",
+   "semtypes": [
+    "sosy"
+   ]
+  },
+  {
+   "start": 1538,
+   "end": 1558,
+   "concept": "Dyspnea",
+   "concept_id": 6,
+   "trigger_word": "difficulty breathing",
+   "offset": 1538,
+   "cui": null,
+   "semtypes": null
+  },
+  {
+   "start": 1538,
+   "end": 1558,
+   "concept": "Respiratory distress",
+   "concept_id": 7,
+   "trigger_word": "difficulty breathing",
+   "offset": 1538,
+   "cui": null,
+   "semtypes": null
+  },
+  {
+   "start": 1564,
+   "end": 1568,
+   "concept": "Dentatorubral-Pallidoluysian Atrophy",
+   "concept_id": 8,
+   "trigger_word": "nods",
+   "offset": 1564,
+   "cui": "C0751781",
+   "semtypes": [
+    "dsyn"
+   ]
+  },
+  {
+   "start": 1597,
+   "end": 1605,
+   "concept": "Headache",
+   "concept_id": 9,
+   "trigger_word": "headache",
+   "offset": 1597,
+   "cui": "C0018681",
+   "semtypes": [
+    "sosy"
+   ]
+  },
+  {
+   "start": 1629,
+   "end": 1633,
+   "concept": "Dentatorubral-Pallidoluysian Atrophy",
+   "concept_id": 10,
+   "trigger_word": "nods",
+   "offset": 1629,
+   "cui": "C0751781",
+   "semtypes": [
+    "dsyn"
+   ]
+  },
+  {
+   "start": 1634,
+   "end": 1640,
+   "concept": "Tremor",
+   "concept_id": 11,
+   "trigger_word": "shakes",
+   "offset": 1634,
+   "cui": "C0040822",
+   "semtypes": [
+    "sosy"
+   ]
+  }
+ ],
+ "_note": "Derived from a MIMIC-style concept-extraction sample. The [**...**] de-identification markers were converted to <TAG> form and every start/end recomputed against that text, because the source file's own start/end do not address its text."
+}

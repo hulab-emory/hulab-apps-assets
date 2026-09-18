@@ -13,6 +13,7 @@ patient-identifiable, internal or licence-restricted belongs in this repo.
 ```
 afib/            test1–test6.json    pre-decoded waveforms
 notes/           0–2.json            clinical notes + one LLM answer each
+note_concepts/   0.json              a note with many concepts to review
 diet_reports/    0-1.json + PDFs     NHANES diet reports and their extractions
 pub-llm-eval/    three papers        PDFs for the publication-review template
 crc_eval/  pdf/  two source PDFs     coordinator-training review
@@ -35,6 +36,18 @@ gpt_answer }`. The body key is **`text` on some files and `note` on others**;
 both are read, so don't normalise one into the other expecting a fix. A
 `trigger_word` that doesn't appear in its text is a real case (`0.json`) — the
 prediction is still listed for review, just not highlighted.
+
+**`note_concepts/0.json` — concept review.** `{ filename, text, info: [...] }`
+where each entry is `{ start, end, concept, concept_id, trigger_word, offset }`.
+Two rules the renderer depends on:
+
+- **`start`/`end` must actually address `text`.** They are used to slice it
+  directly, so an off-by-anything highlights the wrong words.
+- **De-identified spans are inline `<TAG>` markers** (`<DATE_TIME>`, `<AGE>`,
+  `<HOSPITAL>`, `<NAME>`) which render as blue chips. Anything matching
+  `<[A-Z_]*>` is treated as a tag.
+
+`concept_id` is the number on each highlight's badge.
 
 **`diet_reports/` — reports and their extractions.** `<n>.json` is
 `{ filePath, info: [...] }` and **names its own PDF** through `filePath`, which
