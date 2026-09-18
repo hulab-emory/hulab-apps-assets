@@ -15,6 +15,8 @@ afib/            test1–test6.json    pre-decoded waveforms
 notes/           0–2.json            clinical notes + one LLM answer each
 pdf/             sample.pdf, 0.json  a document and its extraction sidecar
 pub-llm-eval/    three papers        PDFs for the publication-review template
+crc_eval/  pdf/  two source PDFs     coordinator-training review
+           result/  one JSON each    questions + per-model answers
 ```
 
 ## Formats
@@ -37,6 +39,22 @@ prediction is still listed for review, just not highlighted.
 **`pdf/0.json` — extraction sidecar.** `{ filePath, info: [...] }`, found by
 swapping the PDF's extension for `.json`. `info` is model output whose keys vary
 per pipeline; the client walks it generically rather than assuming a vocabulary.
+
+**`crc_eval/` — coordinator-training review.** Split across two folders, matching
+the bucket layout the app already expects: `result/<name>.json` holds the
+questions, and its `file_name` names a PDF in the **sibling `pdf/` folder**, not
+its own. Each question carries `LLMs: { "<model>": { response, FKG } }`.
+
+**The last two questions are load-bearing.** The reviewer UI renders them with a
+different form, side by side against `info[1]` — they are the translations of
+that answer. Both files here run: summarize → summarize as bullets → translate
+to Chinese → translate to Spanish, and the translations carry `FKG: null`
+because the readability score is meaningless for them. A file with fewer than
+three questions breaks that layout.
+
+The source PDFs are NCI PDQ patient-information summaries (acupuncture; anxiety
+and distress in cancer) saved from cancer.gov. PDQ summaries are US Government
+works and NCI states their text may be used freely.
 
 **`pub-llm-eval/*.pdf`.** The filenames contain literal `%2F` (an encoded `/`
 in the DOI) and that is **part of the filename, not encoding**. Anything
